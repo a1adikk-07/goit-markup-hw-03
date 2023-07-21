@@ -37,13 +37,13 @@ background-color: #ffffff;
 .header-container {
     display: flex;
     width: 100%;
-    max-width: 1367px;
+    padding: 0 15px;
+    max-width: 1158px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
-    outline: 2px solid red;
     align-items: center;
-    gap: 600px;
+    gap: 332px;
 }
 
 .link {
@@ -162,10 +162,10 @@ background-color: #ffffff;
 /**_____Section1____**/
 
 .container {
-    padding: 180px 0;
+    padding: 0 15px;
     display: block;
-    width: 100%;
-    border: 2px solid red;
+    width: 1158px;
+    margin: 0 auto;
 }
 .advantages-section-list {
     width: 1480px;
@@ -186,6 +186,7 @@ background-color: #ffffff;
     margin: 0 auto;
     width: 496px;
     flex-shrink: 0;
+    padding-top: 188px;
      margin-bottom: 48px;
 }
 .head-btn {
@@ -219,8 +220,9 @@ background-color: #ffffff;
 }
 
 .advantages-list {
-    padding-left: 156px;
-    padding-right: 156px;
+    margin-top: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     gap: 24px;
 }
@@ -272,13 +274,17 @@ width: 400px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding-bottom: 72px;
+    padding-top: 120px;
+    margin-bottom: 72px;
     max-width: 324px;
     width: 100%;
     margin: 0 auto;
 }
 .advantages-list {
     display: flex;
+    padding: 0;
+    padding-bottom: 120px;
+
 }
 .advantages-item {
     width: ((100% - 24) / 3);
@@ -286,8 +292,11 @@ width: 400px;
 }
 
 /**____Section4____**/
+
+
 .section-four-list {
     background: var(--cloud, #F4F4FD);
+    padding: 120px 0;
 }
 .team-title {
     color: var(--logo-color-second);
@@ -303,11 +312,13 @@ width: 400px;
 }
 .team-list-ul {
 display: inline-flex;
+gap: 24px;
 }
 .team-list {
         width: calc((100% - 24) / 4);
     background-color: var(--white);
     padding-bottom: 0px;
+    margin-bottom: 120px;
     align-items: center;
     gap: 32px;
 }
@@ -345,6 +356,9 @@ border-radius: 0px 0px 4px 4px;
 
 .footer {
     background: var(--logo-color-second);
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -379,6 +393,8 @@ border-radius: 0px 0px 4px 4px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
+    padding-top: 16px;
+    width: 268px;
 }
 
 /**_____PORTFOLIO.HTML____**/
@@ -469,9 +485,23 @@ portfolio list {
 }
 
 .partfolio-header-container {
-    display: flex;
-    align-items: center;
-    gap: 600px;
+        display: flex;
+        width: 100%;
+        padding: 0 15px;
+        max-width: 1158px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0 auto;
+        align-items: center;
+        gap: 332px;
+}
+
+.portfolio-container {
+
+    display: block;
+    width: 1158px;
+    margin: 0 auto;
+    border: 2px solid red;
 }
 
 .header-nav {
@@ -493,10 +523,29 @@ portfolio list {
 
 
 /**____SECTION___**/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .portfolio-imges {
     list-style: none;
     background-color: #fff;
+}
+
+.buttons {
+    display: flex;
+    padding-top: 96px;
+    padding-bottom: 84px;
+    flex-wrap: wrap;margin: 0 auto;
 }
 
 .partfolio-btn {
@@ -511,6 +560,7 @@ portfolio list {
     border-radius: 4px;
     background: #f4f4fd;
     cursor: pointer;
+    padding: 12px 24px;
 }
 .partfolio-btn:hover {
     color: #ffffff;
@@ -521,9 +571,25 @@ portfolio list {
     background-color: #404BBF;
 }
 
-.partfolio list {
+.button-list {
+    display: flex;
+    margin: 0 auto;
+    width: calc((100% - 24) / 5);
+    gap: 24px;
     list-style: none;
     text-decoration: none;
+}
+
+.partfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.partfolio-item {
+    width: calc((100% - 144) / 9);
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .partfolio-item link {
@@ -536,6 +602,8 @@ portfolio list {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding: 0 16px;
+    padding-bottom: 8px;
 }
 
 .partfolio-subtitle {
@@ -544,18 +612,38 @@ portfolio list {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 0 16px;
 }
+
+.portfolio-card {
+    display: flex;
+    width: 360px;
+    height: 420px;
+    padding: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    width: 0 32px;
+    flex-shrink: 0;
+    border: 1px solid var(--cornflower, #E7E9FC);
+    background: var(--white, #FFF);
+}
+
 
 /**____PARTFOLIO___FOOTER______**/
 
 .partfolio-footer {
-    background-color: var(--logo-color-second);
+    background: var(--logo-color-second);
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .partfolio-footer-logo {
     color: var(--logo-color);
-    font-family: "Raleway", sans-serif;
     font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
     font-weight: 800;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -583,4 +671,6 @@ portfolio list {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
+    padding-top: 16px;
+    width: 268px;
 }
