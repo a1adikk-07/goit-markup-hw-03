@@ -61,7 +61,9 @@ background-color: #ffffff;
 
 
 .header {
+    border-bottom: 1px solid #e7e9fc;
     background: var(--white, #FFF);
+    padding: 0 15px;
 }
 .header-logo {
     color: var(--logo-color);
@@ -88,6 +90,7 @@ background-color: #ffffff;
     line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-right: 70px;
 }
 .link {
     text-decoration: none;
@@ -115,7 +118,7 @@ background-color: #ffffff;
 }
 .header-address {
     display: flex;
-    gap: 18px;
+    gap: 40px;
 }
 
 
@@ -128,6 +131,7 @@ background-color: #ffffff;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
+    padding: 24px 0;
 }
 
 .menu-link:hover {
