@@ -90,7 +90,7 @@ background-color: #ffffff;
     line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    margin-right: 70px;
+    margin-right: 76px;
 }
 .link {
     text-decoration: none;
@@ -166,9 +166,9 @@ background-color: #ffffff;
 /**_____Section1____**/
 
 .container {
-    padding: 0 15px;
     width: 1158px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .advantages-section-list {
     padding: 188px 0;
