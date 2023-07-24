@@ -367,6 +367,7 @@ border-radius: 0px 0px 4px 4px;
     line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    display: inline-flex;
 }
 
 .footer-content {
@@ -385,8 +386,9 @@ border-radius: 0px 0px 4px 4px;
 /**_____HEADER_____**/
 
 .partfolio-header {
-    border-bottom: 1px solid var(--cornflower, #E7E9FC);
+    border-bottom: 1px solid #e7e9fc;
     background: var(--white, #FFF);
+    padding: 0 15px;
 }
 
 .partfolio-logo {
@@ -401,9 +403,12 @@ border-radius: 0px 0px 4px 4px;
     text-decoration: none;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .partfolio-logo-accent {
-    justify-content: center;
-    color: #2E2F42;
+    color: var(--logo-color-second);
     font-size: 18px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -411,10 +416,40 @@ border-radius: 0px 0px 4px 4px;
     line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
-.portfolio list {
-    list-style: none;
+.link {
+    text-decoration: none;
+}
+
+
+/**__menu__**/
+
+.partfolio-contacts {
+    display: block;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+}
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.portfolio-link {
+    display: flex;
+    gap: 40px;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+}
+
+.partfolio-address {
+    display: flex;
+    gap: 40px;
 }
 
 .portfolio-menu {
@@ -426,23 +461,22 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
-    }
+    padding: 24px 0;
+}
 
-.portfolio-menu:hover {
+.portfolio-link:hover {
     color: var(--lilac);
 }
 
-.portfolio-menu:focus {
+.portfolio-link:focus {
     color: var(--lilac);
 }
 
 .partfolio-contacts {
-    color: var(--primary-text-color);
     font-style: normal;
 }
 
-
-.partfolio-contacts link {
+.partfolio-contacts {
     color: var(--primary-text-color);
     font-size: 16px;
     font-family: "Roboto", sans-serif;
@@ -453,50 +487,16 @@ border-radius: 0px 0px 4px 4px;
     text-decoration: none;
 }
 
-.partfolio-contacts-link link:hover {
+.partfolio-contacts:hover {
     color: var(--lilac);
 }
 
-.partfolio-contacts-link link:focus {
+.partfolio-contacts:focus {
     color: var(--lilac);
 }
-
-.partfolio-header {
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
-}
-
-.partfolio-header-container {
-        display: flex;
-        width: 100%;
-        padding: 0 15px;
-        max-width: 1158px;
-        padding-left: 16px;
-        padding-right: 16px;
-        margin: 0 auto;
-        align-items: center;
-        gap: 332px;
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: space-between;
-}
-
-.portfolio-list {
-    display: flex;
-    gap: 40px;
-}
-
-.partfolio-address {
-    display: flex;
-    gap: 18px;
-}
-
 
 /**____SECTION___**/
+
 .visually-hidden {
     position: absolute;
     width: 1px;
