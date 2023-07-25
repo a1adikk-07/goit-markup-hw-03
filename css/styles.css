@@ -182,9 +182,10 @@ background-color: #ffffff;
     letter-spacing: 1.12px;
     display: block;
     margin: 0 auto;
-    width: 496px;
+    max-width: 496px;
      margin-bottom: 48px;
 }
+
 .head-btn {
     color: var(--white);
     font-size: 16px;
