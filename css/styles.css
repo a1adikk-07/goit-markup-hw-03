@@ -34,17 +34,6 @@ color: var(--primary-text-color);
 background-color: #ffffff;
 }
 
-.header-container {
-    display: flex;
-    width: 100%;
-    padding: 0 15px;
-    max-width: 1158px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
-    align-items: center;
-    gap: 332px;
-}
 
 .link {
     text-decoration: none;
@@ -61,6 +50,7 @@ background-color: #ffffff;
 
 
 .header {
+    display: flex;
     border-bottom: 1px solid #e7e9fc;
     background: var(--white, #FFF);
     padding: 0 15px;
@@ -75,6 +65,7 @@ background-color: #ffffff;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .link {
@@ -83,15 +74,8 @@ background-color: #ffffff;
 
 .header-logo-accent {
     color: var(--logo-color-second);
-    font-size: 18px;
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    margin-right: 76px;
 }
+
 .link {
     text-decoration: none;
 }
@@ -99,25 +83,17 @@ background-color: #ffffff;
 
 /**__menu__**/
 
-.contacts-link {
-    display: block;
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
-}
-
 
 .header-nav {
     display: flex;
     align-items: center;
-    flex-grow: 1;
-    justify-content: space-between;
 }
-.list {
+.menu-list {
     display: flex;
     gap: 40px;
 }
 .header-address {
-    display: flex;
+        display: flex;
     gap: 40px;
 }
 
@@ -141,8 +117,15 @@ background-color: #ffffff;
     color: var(--lilac);
 }
 
+.contacts-link {
+    display: block;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+}
+
 .contacts {
     font-style: normal;
+
 }
 
 .contacts-link {
@@ -166,7 +149,10 @@ background-color: #ffffff;
 /**_____Section1____**/
 
 .container {
-    width: 1158px;
+    width: 100%;
+    max-width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -385,115 +371,7 @@ border-radius: 0px 0px 4px 4px;
 
 /**_____HEADER_____**/
 
-.partfolio-header {
-    border-bottom: 1px solid #e7e9fc;
-    background: var(--white, #FFF);
-    padding: 0 15px;
-}
 
-.partfolio-logo {
-    color: var(--logo-color);
-    font-size: 18px;
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.partfolio-logo-accent {
-    color: var(--logo-color-second);
-    font-size: 18px;
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    margin-right: 76px;
-}
-
-.link {
-    text-decoration: none;
-}
-
-
-/**__menu__**/
-
-.partfolio-contacts {
-    display: block;
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
-}
-
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: space-between;
-}
-
-.portfolio-link {
-    display: flex;
-    gap: 40px;
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
-}
-
-.partfolio-address {
-    display: flex;
-    gap: 40px;
-}
-
-.portfolio-menu {
-    color: var(--logo-color-second);
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    padding: 24px 0;
-}
-
-.portfolio-link:hover {
-    color: var(--lilac);
-}
-
-.portfolio-link:focus {
-    color: var(--lilac);
-}
-
-.partfolio-contacts {
-    font-style: normal;
-}
-
-.partfolio-contacts {
-    color: var(--primary-text-color);
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
-
-.partfolio-contacts:hover {
-    color: var(--lilac);
-}
-
-.partfolio-contacts:focus {
-    color: var(--lilac);
-}
 
 /**____SECTION___**/
 
@@ -554,11 +432,9 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .button {
-    display: flex;
-    width: calc((100% - 96px) / 5);
-    gap: 24px;
     text-decoration: none;
     justify-content: center;
+
 }
 
 .partfolio-list {
