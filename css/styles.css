@@ -181,8 +181,8 @@ background-color: #ffffff;
     line-height: 1.07;
     letter-spacing: 1.12px;
     display: block;
+        max-width: 496px;
     margin: 0 auto;
-    max-width: 496px;
      margin-bottom: 48px;
 }
 
@@ -196,6 +196,7 @@ background-color: #ffffff;
     letter-spacing: 0.64px;
     background: var(--logo-color);
     cursor: pointer;
+    min-width: 169px;
     border: 0;
     border-radius: 4px;
     padding: 16px 32px;
@@ -296,16 +297,17 @@ width: calc((100% - 72px) / 4);
     margin-bottom: 72px;
 }
 .team-list-ul {
-display: inline-flex;
+display: flex;
 gap: 24px;
 }
 .team-list {
     width: calc((100% - 72px) / 4);
     background-color: var(--white);
+    border-radius: 0px 0px 4px 4px;
 }
 .card-text {
+    border-radius: 0px 0px 4px 4px;
     display: block;
-border-radius: 0px 0px 4px 4px;
     background: var(--white, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     padding: 32px 0;
@@ -320,6 +322,7 @@ border-radius: 0px 0px 4px 4px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-p {
@@ -351,7 +354,7 @@ border-radius: 0px 0px 4px 4px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    display: inline-flex;
+    display: inline-block;
     margin-bottom: 16px;
 }
 
